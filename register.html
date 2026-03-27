@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatApp - Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <style>
+   .panel a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+   }
+   .panel a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+   }
+  </style>
+</head>
+<body class="theme-light">
+  <main class="mobile-shell">
+    <header class="top-bar glass">
+      <div class="center">
+        <h1>wE-chat</h1>
+      </div>
+    </header>
+    <section class="panel list-panel">
+      <h2>Register To Chat With Your Friends</h2>
+      <form action="">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username" />
+        </div>
+        <div class="form-group">
+          <label for="username">Email</label>
+          <input type="text" id="username" placeholder="Enter your Email" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+      <div class="panel">
+    <a href="login.html">You have an account? Login here</a>
+
+      </div>
+    <footer class="bottom-nav glass">
+    </footer>
+  </main>
+  <script src="js/ui.js"></script>
+</body>
+</html>

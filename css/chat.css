@@ -1,0 +1,120 @@
+.chat-shell {
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+}
+
+.messages {
+  height: 490px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+.messages::-webkit-scrollbar {
+  display: none;
+}
+
+.message {
+  max-width: 76%;
+  padding: 10px 12px;
+  border-radius: 18px;
+  position: relative;
+  animation: messageIn 0.25s ease;
+}
+
+.message.receiver {
+  align-self: flex-start;
+  background: var(--receiver);
+  border-top-left-radius: 6px;
+}
+
+.message.sender {
+  align-self: flex-end;
+  background: var(--primary);
+  color: #fff;
+  border-top-right-radius: 6px;
+}
+
+.meta-row {
+  margin-top: 4px;
+  font-size: 0.72rem;
+  opacity: 0.9;
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.reaction {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  background: var(--surface);
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--muted) 20%, transparent);
+  font-size: 0.8rem;
+  padding: 2px 6px;
+}
+
+.attachment-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+  border-radius: 10px;
+  padding: 6px 8px;
+}
+
+.typing-wrap {
+  margin: 4px 12px 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--muted);
+}
+.typing-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--muted);
+  animation: pulse 1s infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.12s; }
+.typing-dot:nth-child(3) { animation-delay: 0.24s; }
+
+.input-area {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto auto;
+  gap: 8px;
+  padding: 10px 12px 14px;
+  border-top: 1px solid color-mix(in srgb, var(--muted) 20%, transparent);
+}
+
+.input-area input {
+  border: none;
+  outline: none;
+  border-radius: 999px;
+  padding: 0 14px;
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.send-btn {
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(0.8); opacity: 0.6; }
+  50% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes messageIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

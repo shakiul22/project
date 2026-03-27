@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatApp - Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/chat.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body class="theme-light">
+  <main class="mobile-shell chat-shell">
+    <header class="top-bar glass">
+      <div class="left-group">
+        <button class="icon-btn" onclick="window.location.href='index.html'" aria-label="Back">←</button>
+        <img class="avatar" src="https://i.pravatar.cc/80?img=32" alt="User avatar" />
+        <div>
+          <h1>Sadia Noor</h1>
+          <p class="muted"><span class="status online"></span>Online now</p>
+        </div>
+      </div>
+      <div class="icon-group">
+        <button class="icon-btn" aria-label="Voice call">📞</button>
+        <button class="icon-btn" aria-label="Video call">🎥</button>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">🌓</button>
+      </div>
+    </header>
+
+    <section class="messages" id="messageList">
+      
+    </section>
+
+    <div class="typing-wrap" id="typingIndicator">
+      <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
+      <small>Sadia is typing...</small>
+    </div>
+
+    <footer class="input-area glass">
+      <button class="icon-btn" aria-label="Emoji">😊</button>
+      <button class="icon-btn" aria-label="Attachment">📎</button>
+      <input type="text" id="messageInput" placeholder="Type a message" />
+      <button class="icon-btn" aria-label="Voice message">🎙️</button>
+      <button class="send-btn" id="sendMessageBtn" aria-label="Send">➤</button>
+    </footer>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>

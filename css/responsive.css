@@ -1,0 +1,14 @@
+@media (min-width: 700px) {
+  .mobile-shell {
+    border-radius: 30px;
+    min-height: 560px;
+    margin: 18px 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .top-bar { padding: 12px; }
+  .icon-btn { width: 34px; height: 34px; font-size: 0.9rem; }
+  .chat-item { grid-template-columns: 44px 1fr auto; }
+  .fab { width: 50px; height: 50px; }
+}

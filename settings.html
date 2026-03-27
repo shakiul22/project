@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatApp - Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body class="theme-light">
+  <main class="mobile-shell">
+    <header class="top-bar glass">
+      <div class="left-group">
+        <button class="icon-btn" onclick="window.location.href='index.html'" aria-label="Back">←</button>
+        <h1>Settings</h1>
+      </div>
+      <button class="icon-btn" id="themeToggle">🌓</button>
+    </header>
+    <section class="panel list-panel">
+      <div class="list-row"><span>Dark Mode</span><label class="switch"><input id="themeSwitch" type="checkbox" /><span class="slider"></span></label></div>
+      <div class="list-row"><span>Notifications</span><strong>Enabled</strong></div>
+      <div class="list-row"><span>Privacy</span><strong>Friends only</strong></div>
+      <div class="list-row"><span>Language</span><strong>English</strong></div>
+    </section>
+  </main>
+  <script src="js/ui.js"></script>
+</body>
+</html>
