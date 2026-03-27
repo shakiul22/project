@@ -1,0 +1,31 @@
+whatapp/
+│
+├── index.html              # Main entry (chat UI)
+├── chat.html               # Chat conversation screen
+├── profile.html        # User profile
+├── settings.html       # App settings
+├── notifications.html  # (optional)
+├── search.html         # (optional)
+│
+├── css/
+│   ├── style.css           # Global styles
+│   ├── chat.css            # Chat screen styles
+│   └── responsive.css      # Mobile responsiveness
+│
+├── js/
+│   ├── app.js              # Main app logic
+│   ├── chat.js             # Chat functionality
+│   ├── ui.js               # UI interactions (toggle, animations)
+│   └── data.js             # Fake data / users / messages
+│
+├── assets/
+│   ├── images/             # Avatars, icons
+│   ├── icons/              # SVG icons
+│   └── sounds/             # Notification sounds 
+│
+├── components/             # (reusable HTML parts)
+│   ├── header.html
+│   ├── chat-item.html
+│   └── message-bubble.html
+│
+└── README.md

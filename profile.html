@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatApp - Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body class="theme-light">
+  <main class="mobile-shell">
+    <header class="top-bar glass">
+      <div class="left-group">
+        <button class="icon-btn" onclick="window.location.href='index.html'" aria-label="Back">←</button>
+        <h1>Profile</h1>
+      </div>
+      <button class="icon-btn" id="themeToggle">🌓</button>
+    </header>
+    <section class="panel">
+      <img class="avatar large" src="https://i.pravatar.cc/160?img=12" alt="Profile image" />
+      <h2>Akil Rahman</h2>
+      <p class="muted">Product Designer • Dhaka</p>
+    </section>
+    <section class="panel list-panel">
+      <div class="list-row"><span>Username</span><strong>@akil</strong></div>
+      <div class="list-row"><span>Status</span><strong>Available</strong></div>
+      <div class="list-row"><span>Media Shared</span><strong>196 items</strong></div>
+    </section>
+    <nav class="bottom-nav glass">
+      <a class="active" href="index.html">Chats</a>
+      <a href="profile.html">Profile</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </main>
+  <script src="js/ui.js"></script>
+</body>
+</html>
